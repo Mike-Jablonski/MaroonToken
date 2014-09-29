@@ -1,0 +1,758 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2724BB8919B3F7A700961008 /* OptionsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2724BB8719B3F7A700961008 /* OptionsCell.m */; };
+		2724BB8A19B3F7A700961008 /* OptionsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2724BB8819B3F7A700961008 /* OptionsCell.xib */; };
+		2724BB8D19B3FE0C00961008 /* OptionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2724BB8C19B3FE0C00961008 /* OptionsViewController.m */; };
+		2724BB9019B4002500961008 /* Options.m in Sources */ = {isa = PBXBuildFile; fileRef = 2724BB8F19B4002500961008 /* Options.m */; };
+		2724BB9419B57FDA00961008 /* ParticipantInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2724BB9319B57FDA00961008 /* ParticipantInfoViewController.m */; };
+		2724BB9919B5807800961008 /* ParticipantInfoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2724BB9719B5807800961008 /* ParticipantInfoCell.m */; };
+		2724BB9A19B5807800961008 /* ParticipantInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2724BB9819B5807800961008 /* ParticipantInfoCell.xib */; };
+		274366AD18A71F37005206CB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 274366AC18A71F37005206CB /* Foundation.framework */; };
+		274366AF18A71F37005206CB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 274366AE18A71F37005206CB /* CoreGraphics.framework */; };
+		274366B118A71F37005206CB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 274366B018A71F37005206CB /* UIKit.framework */; };
+		274366B718A71F37005206CB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 274366B518A71F37005206CB /* InfoPlist.strings */; };
+		274366B918A71F37005206CB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 274366B818A71F37005206CB /* main.m */; };
+		274366BD18A71F37005206CB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 274366BC18A71F37005206CB /* AppDelegate.m */; };
+		274366C018A71F37005206CB /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 274366BE18A71F37005206CB /* Main_iPhone.storyboard */; };
+		274366C318A71F37005206CB /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 274366C118A71F37005206CB /* Main_iPad.storyboard */; };
+		274366C818A71F37005206CB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 274366C718A71F37005206CB /* Images.xcassets */; };
+		274366CF18A71F37005206CB /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 274366CE18A71F37005206CB /* XCTest.framework */; };
+		274366D018A71F37005206CB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 274366AC18A71F37005206CB /* Foundation.framework */; };
+		274366D118A71F37005206CB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 274366B018A71F37005206CB /* UIKit.framework */; };
+		274366D918A71F37005206CB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 274366D718A71F37005206CB /* InfoPlist.strings */; };
+		274366DB18A71F37005206CB /* MaroonTokenTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 274366DA18A71F37005206CB /* MaroonTokenTests.m */; };
+		276276AB19B5D24D0027C3AA /* MatchmakingServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 276276AA19B5D24D0027C3AA /* MatchmakingServer.m */; };
+		276276AE19B5D25D0027C3AA /* MatchmakingClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 276276AD19B5D25D0027C3AA /* MatchmakingClient.m */; };
+		276276B019B5D2B70027C3AA /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 276276AF19B5D2B70027C3AA /* GameKit.framework */; };
+		276276B319B71B270027C3AA /* ResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 276276B219B71B270027C3AA /* ResultViewController.m */; };
+		276276B619B71D110027C3AA /* results_arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 276276B419B71D110027C3AA /* results_arrow.png */; };
+		276276B719B71D110027C3AA /* results_arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 276276B519B71D110027C3AA /* results_arrow@2x.png */; };
+		276276BA19B85C6B0027C3AA /* RoundViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 276276B919B85C6B0027C3AA /* RoundViewController.m */; };
+		276276BD19B886C90027C3AA /* MainNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 276276BC19B886C90027C3AA /* MainNavigationViewController.m */; };
+		276276C019B887570027C3AA /* Game.m in Sources */ = {isa = PBXBuildFile; fileRef = 276276BF19B887570027C3AA /* Game.m */; };
+		276939CA19B2C713006FA667 /* Round.m in Sources */ = {isa = PBXBuildFile; fileRef = 276939C919B2C713006FA667 /* Round.m */; };
+		276939CD19B2C935006FA667 /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = 276939CC19B2C935006FA667 /* Player.m */; };
+		276939D019B3E470006FA667 /* MaroonTokenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 276939CF19B3E470006FA667 /* MaroonTokenViewController.m */; };
+		27C3F1E619BEE88E00368AE6 /* HostOverviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27C3F1E519BEE88E00368AE6 /* HostOverviewViewController.m */; };
+		27CCC4F719B2AFB30037B923 /* NSData+PacketAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 27CCC4E819B2AFB30037B923 /* NSData+PacketAdditions.m */; };
+		27CCC4F819B2AFB30037B923 /* Packet.m in Sources */ = {isa = PBXBuildFile; fileRef = 27CCC4EA19B2AFB30037B923 /* Packet.m */; };
+		27CCC4F919B2AFB30037B923 /* PacketClientEndRound.m in Sources */ = {isa = PBXBuildFile; fileRef = 27CCC4EC19B2AFB30037B923 /* PacketClientEndRound.m */; };
+		27CCC4FA19B2AFB30037B923 /* PacketOtherClientQuit.m in Sources */ = {isa = PBXBuildFile; fileRef = 27CCC4EE19B2AFB30037B923 /* PacketOtherClientQuit.m */; };
+		27CCC4FB19B2AFB30037B923 /* PacketServerReady.m in Sources */ = {isa = PBXBuildFile; fileRef = 27CCC4F019B2AFB30037B923 /* PacketServerReady.m */; };
+		27CCC4FC19B2AFB30037B923 /* PacketSignInResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 27CCC4F219B2AFB30037B923 /* PacketSignInResponse.m */; };
+		27CCC4FD19B2AFB30037B923 /* PacketStartResults.m in Sources */ = {isa = PBXBuildFile; fileRef = 27CCC4F419B2AFB30037B923 /* PacketStartResults.m */; };
+		27CCC4FE19B2AFB30037B923 /* PacketStartRound.m in Sources */ = {isa = PBXBuildFile; fileRef = 27CCC4F619B2AFB30037B923 /* PacketStartRound.m */; };
+		27CCC50219B2B3BC0037B923 /* ParticipantCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 27CCC50019B2B3BC0037B923 /* ParticipantCell.m */; };
+		27CCC50319B2B3BC0037B923 /* ParticipantCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27CCC50119B2B3BC0037B923 /* ParticipantCell.xib */; };
+		27D58F0919B5951D00AEF881 /* PeerConnectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D58F0719B5951D00AEF881 /* PeerConnectionCell.m */; };
+		27D58F0A19B5951D00AEF881 /* PeerConnectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27D58F0819B5951D00AEF881 /* PeerConnectionCell.xib */; };
+		27D58F0E19B5983000AEF881 /* ParticipantsConnectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D58F0D19B5983000AEF881 /* ParticipantsConnectionViewController.m */; };
+		27D58F1119B5998300AEF881 /* HostConnectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D58F1019B5998300AEF881 /* HostConnectionViewController.m */; };
+		27F6A5FA19C50AB400765947 /* WaitingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27F6A5F919C50AB400765947 /* WaitingViewController.m */; };
+		27F6A5FD19C5234B00765947 /* logo_main.png in Resources */ = {isa = PBXBuildFile; fileRef = 27F6A5FB19C5234B00765947 /* logo_main.png */; };
+		27F6A5FE19C5234B00765947 /* logo_main@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 27F6A5FC19C5234B00765947 /* logo_main@2x.png */; };
+		27FB4D421998FDE400961652 /* AddParticipantsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27FB4D411998FDE400961652 /* AddParticipantsViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		274366D218A71F37005206CB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 274366A118A71F37005206CB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 274366A818A71F37005206CB;
+			remoteInfo = MaroonToken;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2724BB8619B3F7A700961008 /* OptionsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OptionsCell.h; sourceTree = "<group>"; };
+		2724BB8719B3F7A700961008 /* OptionsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OptionsCell.m; sourceTree = "<group>"; };
+		2724BB8819B3F7A700961008 /* OptionsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OptionsCell.xib; sourceTree = "<group>"; };
+		2724BB8B19B3FE0C00961008 /* OptionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OptionsViewController.h; sourceTree = "<group>"; };
+		2724BB8C19B3FE0C00961008 /* OptionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OptionsViewController.m; sourceTree = "<group>"; };
+		2724BB8E19B4002500961008 /* Options.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Options.h; sourceTree = "<group>"; };
+		2724BB8F19B4002500961008 /* Options.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Options.m; sourceTree = "<group>"; };
+		2724BB9219B57FDA00961008 /* ParticipantInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParticipantInfoViewController.h; sourceTree = "<group>"; };
+		2724BB9319B57FDA00961008 /* ParticipantInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParticipantInfoViewController.m; sourceTree = "<group>"; };
+		2724BB9619B5807800961008 /* ParticipantInfoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParticipantInfoCell.h; sourceTree = "<group>"; };
+		2724BB9719B5807800961008 /* ParticipantInfoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParticipantInfoCell.m; sourceTree = "<group>"; };
+		2724BB9819B5807800961008 /* ParticipantInfoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ParticipantInfoCell.xib; sourceTree = "<group>"; };
+		274366A918A71F37005206CB /* MaroonToken.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MaroonToken.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		274366AC18A71F37005206CB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		274366AE18A71F37005206CB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		274366B018A71F37005206CB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		274366B418A71F37005206CB /* MaroonToken-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MaroonToken-Info.plist"; sourceTree = "<group>"; };
+		274366B618A71F37005206CB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		274366B818A71F37005206CB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		274366BA18A71F37005206CB /* MaroonToken-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MaroonToken-Prefix.pch"; sourceTree = "<group>"; };
+		274366BB18A71F37005206CB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		274366BC18A71F37005206CB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		274366BF18A71F37005206CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		274366C218A71F37005206CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		274366C718A71F37005206CB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		274366CD18A71F37005206CB /* MaroonTokenTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MaroonTokenTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		274366CE18A71F37005206CB /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		274366D618A71F37005206CB /* MaroonTokenTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MaroonTokenTests-Info.plist"; sourceTree = "<group>"; };
+		274366D818A71F37005206CB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		274366DA18A71F37005206CB /* MaroonTokenTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MaroonTokenTests.m; sourceTree = "<group>"; };
+		276276A919B5D24D0027C3AA /* MatchmakingServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MatchmakingServer.h; sourceTree = "<group>"; };
+		276276AA19B5D24D0027C3AA /* MatchmakingServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MatchmakingServer.m; sourceTree = "<group>"; };
+		276276AC19B5D25D0027C3AA /* MatchmakingClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MatchmakingClient.h; sourceTree = "<group>"; };
+		276276AD19B5D25D0027C3AA /* MatchmakingClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MatchmakingClient.m; sourceTree = "<group>"; };
+		276276AF19B5D2B70027C3AA /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
+		276276B119B71B270027C3AA /* ResultViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResultViewController.h; sourceTree = "<group>"; };
+		276276B219B71B270027C3AA /* ResultViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResultViewController.m; sourceTree = "<group>"; };
+		276276B419B71D110027C3AA /* results_arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = results_arrow.png; sourceTree = "<group>"; };
+		276276B519B71D110027C3AA /* results_arrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "results_arrow@2x.png"; sourceTree = "<group>"; };
+		276276B819B85C6B0027C3AA /* RoundViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoundViewController.h; sourceTree = "<group>"; };
+		276276B919B85C6B0027C3AA /* RoundViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoundViewController.m; sourceTree = "<group>"; };
+		276276BB19B886C90027C3AA /* MainNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainNavigationViewController.h; sourceTree = "<group>"; };
+		276276BC19B886C90027C3AA /* MainNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainNavigationViewController.m; sourceTree = "<group>"; };
+		276276BE19B887570027C3AA /* Game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Game.h; sourceTree = "<group>"; };
+		276276BF19B887570027C3AA /* Game.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Game.m; sourceTree = "<group>"; };
+		276939C819B2C713006FA667 /* Round.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Round.h; sourceTree = "<group>"; };
+		276939C919B2C713006FA667 /* Round.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Round.m; sourceTree = "<group>"; };
+		276939CB19B2C935006FA667 /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
+		276939CC19B2C935006FA667 /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Player.m; sourceTree = "<group>"; };
+		276939CE19B3E470006FA667 /* MaroonTokenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MaroonTokenViewController.h; sourceTree = "<group>"; };
+		276939CF19B3E470006FA667 /* MaroonTokenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MaroonTokenViewController.m; sourceTree = "<group>"; };
+		27C3F1E419BEE88E00368AE6 /* HostOverviewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HostOverviewViewController.h; sourceTree = "<group>"; };
+		27C3F1E519BEE88E00368AE6 /* HostOverviewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HostOverviewViewController.m; sourceTree = "<group>"; };
+		27CCC4E719B2AFB30037B923 /* NSData+PacketAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+PacketAdditions.h"; sourceTree = "<group>"; };
+		27CCC4E819B2AFB30037B923 /* NSData+PacketAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+PacketAdditions.m"; sourceTree = "<group>"; };
+		27CCC4E919B2AFB30037B923 /* Packet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Packet.h; sourceTree = "<group>"; };
+		27CCC4EA19B2AFB30037B923 /* Packet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Packet.m; sourceTree = "<group>"; };
+		27CCC4EB19B2AFB30037B923 /* PacketClientEndRound.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PacketClientEndRound.h; sourceTree = "<group>"; };
+		27CCC4EC19B2AFB30037B923 /* PacketClientEndRound.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PacketClientEndRound.m; sourceTree = "<group>"; };
+		27CCC4ED19B2AFB30037B923 /* PacketOtherClientQuit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PacketOtherClientQuit.h; sourceTree = "<group>"; };
+		27CCC4EE19B2AFB30037B923 /* PacketOtherClientQuit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PacketOtherClientQuit.m; sourceTree = "<group>"; };
+		27CCC4EF19B2AFB30037B923 /* PacketServerReady.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PacketServerReady.h; sourceTree = "<group>"; };
+		27CCC4F019B2AFB30037B923 /* PacketServerReady.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PacketServerReady.m; sourceTree = "<group>"; };
+		27CCC4F119B2AFB30037B923 /* PacketSignInResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PacketSignInResponse.h; sourceTree = "<group>"; };
+		27CCC4F219B2AFB30037B923 /* PacketSignInResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PacketSignInResponse.m; sourceTree = "<group>"; };
+		27CCC4F319B2AFB30037B923 /* PacketStartResults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PacketStartResults.h; sourceTree = "<group>"; };
+		27CCC4F419B2AFB30037B923 /* PacketStartResults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PacketStartResults.m; sourceTree = "<group>"; };
+		27CCC4F519B2AFB30037B923 /* PacketStartRound.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PacketStartRound.h; sourceTree = "<group>"; };
+		27CCC4F619B2AFB30037B923 /* PacketStartRound.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PacketStartRound.m; sourceTree = "<group>"; };
+		27CCC4FF19B2B3BC0037B923 /* ParticipantCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParticipantCell.h; sourceTree = "<group>"; };
+		27CCC50019B2B3BC0037B923 /* ParticipantCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParticipantCell.m; sourceTree = "<group>"; };
+		27CCC50119B2B3BC0037B923 /* ParticipantCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ParticipantCell.xib; sourceTree = "<group>"; };
+		27D58F0619B5951D00AEF881 /* PeerConnectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PeerConnectionCell.h; sourceTree = "<group>"; };
+		27D58F0719B5951D00AEF881 /* PeerConnectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PeerConnectionCell.m; sourceTree = "<group>"; };
+		27D58F0819B5951D00AEF881 /* PeerConnectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PeerConnectionCell.xib; sourceTree = "<group>"; };
+		27D58F0C19B5983000AEF881 /* ParticipantsConnectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParticipantsConnectionViewController.h; sourceTree = "<group>"; };
+		27D58F0D19B5983000AEF881 /* ParticipantsConnectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParticipantsConnectionViewController.m; sourceTree = "<group>"; };
+		27D58F0F19B5998300AEF881 /* HostConnectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HostConnectionViewController.h; sourceTree = "<group>"; };
+		27D58F1019B5998300AEF881 /* HostConnectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HostConnectionViewController.m; sourceTree = "<group>"; };
+		27F6A5F819C50AB400765947 /* WaitingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaitingViewController.h; sourceTree = "<group>"; };
+		27F6A5F919C50AB400765947 /* WaitingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WaitingViewController.m; sourceTree = "<group>"; };
+		27F6A5FB19C5234B00765947 /* logo_main.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo_main.png; sourceTree = "<group>"; };
+		27F6A5FC19C5234B00765947 /* logo_main@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo_main@2x.png"; sourceTree = "<group>"; };
+		27FB4D401998FDE400961652 /* AddParticipantsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddParticipantsViewController.h; sourceTree = "<group>"; };
+		27FB4D411998FDE400961652 /* AddParticipantsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddParticipantsViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		274366A618A71F37005206CB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				276276B019B5D2B70027C3AA /* GameKit.framework in Frameworks */,
+				274366AF18A71F37005206CB /* CoreGraphics.framework in Frameworks */,
+				274366B118A71F37005206CB /* UIKit.framework in Frameworks */,
+				274366AD18A71F37005206CB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		274366CA18A71F37005206CB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				274366CF18A71F37005206CB /* XCTest.framework in Frameworks */,
+				274366D118A71F37005206CB /* UIKit.framework in Frameworks */,
+				274366D018A71F37005206CB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2724BB9119B5770E00961008 /* UI - Host */ = {
+			isa = PBXGroup;
+			children = (
+				27FB4D401998FDE400961652 /* AddParticipantsViewController.h */,
+				27FB4D411998FDE400961652 /* AddParticipantsViewController.m */,
+				27CCC4FF19B2B3BC0037B923 /* ParticipantCell.h */,
+				27CCC50019B2B3BC0037B923 /* ParticipantCell.m */,
+				27CCC50119B2B3BC0037B923 /* ParticipantCell.xib */,
+				2724BB8B19B3FE0C00961008 /* OptionsViewController.h */,
+				2724BB8C19B3FE0C00961008 /* OptionsViewController.m */,
+				2724BB8619B3F7A700961008 /* OptionsCell.h */,
+				2724BB8719B3F7A700961008 /* OptionsCell.m */,
+				2724BB8819B3F7A700961008 /* OptionsCell.xib */,
+				27D58F0C19B5983000AEF881 /* ParticipantsConnectionViewController.h */,
+				27D58F0D19B5983000AEF881 /* ParticipantsConnectionViewController.m */,
+				27C3F1E419BEE88E00368AE6 /* HostOverviewViewController.h */,
+				27C3F1E519BEE88E00368AE6 /* HostOverviewViewController.m */,
+			);
+			name = "UI - Host";
+			sourceTree = "<group>";
+		};
+		2724BB9519B57FE100961008 /* UI - Participant */ = {
+			isa = PBXGroup;
+			children = (
+				2724BB9219B57FDA00961008 /* ParticipantInfoViewController.h */,
+				2724BB9319B57FDA00961008 /* ParticipantInfoViewController.m */,
+				2724BB9619B5807800961008 /* ParticipantInfoCell.h */,
+				2724BB9719B5807800961008 /* ParticipantInfoCell.m */,
+				2724BB9819B5807800961008 /* ParticipantInfoCell.xib */,
+				27D58F0F19B5998300AEF881 /* HostConnectionViewController.h */,
+				27D58F1019B5998300AEF881 /* HostConnectionViewController.m */,
+				27F6A5F819C50AB400765947 /* WaitingViewController.h */,
+				27F6A5F919C50AB400765947 /* WaitingViewController.m */,
+				276276B819B85C6B0027C3AA /* RoundViewController.h */,
+				276276B919B85C6B0027C3AA /* RoundViewController.m */,
+				276276B119B71B270027C3AA /* ResultViewController.h */,
+				276276B219B71B270027C3AA /* ResultViewController.m */,
+			);
+			name = "UI - Participant";
+			sourceTree = "<group>";
+		};
+		274366A018A71F37005206CB = {
+			isa = PBXGroup;
+			children = (
+				274366B218A71F37005206CB /* MaroonToken */,
+				274366D418A71F37005206CB /* MaroonTokenTests */,
+				274366AB18A71F37005206CB /* Frameworks */,
+				274366AA18A71F37005206CB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		274366AA18A71F37005206CB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				274366A918A71F37005206CB /* MaroonToken.app */,
+				274366CD18A71F37005206CB /* MaroonTokenTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		274366AB18A71F37005206CB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				276276AF19B5D2B70027C3AA /* GameKit.framework */,
+				274366AC18A71F37005206CB /* Foundation.framework */,
+				274366AE18A71F37005206CB /* CoreGraphics.framework */,
+				274366B018A71F37005206CB /* UIKit.framework */,
+				274366CE18A71F37005206CB /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		274366B218A71F37005206CB /* MaroonToken */ = {
+			isa = PBXGroup;
+			children = (
+				274366BB18A71F37005206CB /* AppDelegate.h */,
+				274366BC18A71F37005206CB /* AppDelegate.m */,
+				276276BB19B886C90027C3AA /* MainNavigationViewController.h */,
+				276276BC19B886C90027C3AA /* MainNavigationViewController.m */,
+				276939CE19B3E470006FA667 /* MaroonTokenViewController.h */,
+				276939CF19B3E470006FA667 /* MaroonTokenViewController.m */,
+				2724BB9119B5770E00961008 /* UI - Host */,
+				2724BB9519B57FE100961008 /* UI - Participant */,
+				27D58F0B19B5952400AEF881 /* UI - Common */,
+				276276C119B8875F0027C3AA /* Experiment Game - Logic */,
+				27D58F1219B59A2000AEF881 /* Experiment Game - Objects */,
+				27CCC4E619B2AF850037B923 /* Network */,
+				274366BE18A71F37005206CB /* Main_iPhone.storyboard */,
+				274366C118A71F37005206CB /* Main_iPad.storyboard */,
+				27F6A5FB19C5234B00765947 /* logo_main.png */,
+				27F6A5FC19C5234B00765947 /* logo_main@2x.png */,
+				276276B419B71D110027C3AA /* results_arrow.png */,
+				276276B519B71D110027C3AA /* results_arrow@2x.png */,
+				274366C718A71F37005206CB /* Images.xcassets */,
+				274366B318A71F37005206CB /* Supporting Files */,
+			);
+			path = MaroonToken;
+			sourceTree = "<group>";
+		};
+		274366B318A71F37005206CB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				274366B418A71F37005206CB /* MaroonToken-Info.plist */,
+				274366B518A71F37005206CB /* InfoPlist.strings */,
+				274366B818A71F37005206CB /* main.m */,
+				274366BA18A71F37005206CB /* MaroonToken-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		274366D418A71F37005206CB /* MaroonTokenTests */ = {
+			isa = PBXGroup;
+			children = (
+				274366DA18A71F37005206CB /* MaroonTokenTests.m */,
+				274366D518A71F37005206CB /* Supporting Files */,
+			);
+			path = MaroonTokenTests;
+			sourceTree = "<group>";
+		};
+		274366D518A71F37005206CB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				274366D618A71F37005206CB /* MaroonTokenTests-Info.plist */,
+				274366D718A71F37005206CB /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		276276A819B5D2380027C3AA /* Packets */ = {
+			isa = PBXGroup;
+			children = (
+				27CCC4E719B2AFB30037B923 /* NSData+PacketAdditions.h */,
+				27CCC4E819B2AFB30037B923 /* NSData+PacketAdditions.m */,
+				27CCC4E919B2AFB30037B923 /* Packet.h */,
+				27CCC4EA19B2AFB30037B923 /* Packet.m */,
+				27CCC4EB19B2AFB30037B923 /* PacketClientEndRound.h */,
+				27CCC4EC19B2AFB30037B923 /* PacketClientEndRound.m */,
+				27CCC4ED19B2AFB30037B923 /* PacketOtherClientQuit.h */,
+				27CCC4EE19B2AFB30037B923 /* PacketOtherClientQuit.m */,
+				27CCC4EF19B2AFB30037B923 /* PacketServerReady.h */,
+				27CCC4F019B2AFB30037B923 /* PacketServerReady.m */,
+				27CCC4F119B2AFB30037B923 /* PacketSignInResponse.h */,
+				27CCC4F219B2AFB30037B923 /* PacketSignInResponse.m */,
+				27CCC4F319B2AFB30037B923 /* PacketStartResults.h */,
+				27CCC4F419B2AFB30037B923 /* PacketStartResults.m */,
+				27CCC4F519B2AFB30037B923 /* PacketStartRound.h */,
+				27CCC4F619B2AFB30037B923 /* PacketStartRound.m */,
+			);
+			name = Packets;
+			sourceTree = "<group>";
+		};
+		276276C119B8875F0027C3AA /* Experiment Game - Logic */ = {
+			isa = PBXGroup;
+			children = (
+				276276BE19B887570027C3AA /* Game.h */,
+				276276BF19B887570027C3AA /* Game.m */,
+			);
+			name = "Experiment Game - Logic";
+			sourceTree = "<group>";
+		};
+		27CCC4E619B2AF850037B923 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				276276A919B5D24D0027C3AA /* MatchmakingServer.h */,
+				276276AA19B5D24D0027C3AA /* MatchmakingServer.m */,
+				276276AC19B5D25D0027C3AA /* MatchmakingClient.h */,
+				276276AD19B5D25D0027C3AA /* MatchmakingClient.m */,
+				276276A819B5D2380027C3AA /* Packets */,
+			);
+			name = Network;
+			sourceTree = "<group>";
+		};
+		27D58F0B19B5952400AEF881 /* UI - Common */ = {
+			isa = PBXGroup;
+			children = (
+				27D58F0619B5951D00AEF881 /* PeerConnectionCell.h */,
+				27D58F0719B5951D00AEF881 /* PeerConnectionCell.m */,
+				27D58F0819B5951D00AEF881 /* PeerConnectionCell.xib */,
+			);
+			name = "UI - Common";
+			sourceTree = "<group>";
+		};
+		27D58F1219B59A2000AEF881 /* Experiment Game - Objects */ = {
+			isa = PBXGroup;
+			children = (
+				2724BB8E19B4002500961008 /* Options.h */,
+				2724BB8F19B4002500961008 /* Options.m */,
+				276939C819B2C713006FA667 /* Round.h */,
+				276939C919B2C713006FA667 /* Round.m */,
+				276939CB19B2C935006FA667 /* Player.h */,
+				276939CC19B2C935006FA667 /* Player.m */,
+			);
+			name = "Experiment Game - Objects";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		274366A818A71F37005206CB /* MaroonToken */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 274366DE18A71F37005206CB /* Build configuration list for PBXNativeTarget "MaroonToken" */;
+			buildPhases = (
+				274366A518A71F37005206CB /* Sources */,
+				274366A618A71F37005206CB /* Frameworks */,
+				274366A718A71F37005206CB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MaroonToken;
+			productName = MaroonToken;
+			productReference = 274366A918A71F37005206CB /* MaroonToken.app */;
+			productType = "com.apple.product-type.application";
+		};
+		274366CC18A71F37005206CB /* MaroonTokenTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 274366E118A71F37005206CB /* Build configuration list for PBXNativeTarget "MaroonTokenTests" */;
+			buildPhases = (
+				274366C918A71F37005206CB /* Sources */,
+				274366CA18A71F37005206CB /* Frameworks */,
+				274366CB18A71F37005206CB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				274366D318A71F37005206CB /* PBXTargetDependency */,
+			);
+			name = MaroonTokenTests;
+			productName = MaroonTokenTests;
+			productReference = 274366CD18A71F37005206CB /* MaroonTokenTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		274366A118A71F37005206CB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Mike Jablonski";
+				TargetAttributes = {
+					274366A818A71F37005206CB = {
+						DevelopmentTeam = 3Q32PUHKY4;
+					};
+					274366CC18A71F37005206CB = {
+						TestTargetID = 274366A818A71F37005206CB;
+					};
+				};
+			};
+			buildConfigurationList = 274366A418A71F37005206CB /* Build configuration list for PBXProject "MaroonToken" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 274366A018A71F37005206CB;
+			productRefGroup = 274366AA18A71F37005206CB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				274366A818A71F37005206CB /* MaroonToken */,
+				274366CC18A71F37005206CB /* MaroonTokenTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		274366A718A71F37005206CB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27F6A5FE19C5234B00765947 /* logo_main@2x.png in Resources */,
+				276276B719B71D110027C3AA /* results_arrow@2x.png in Resources */,
+				27CCC50319B2B3BC0037B923 /* ParticipantCell.xib in Resources */,
+				276276B619B71D110027C3AA /* results_arrow.png in Resources */,
+				2724BB9A19B5807800961008 /* ParticipantInfoCell.xib in Resources */,
+				274366C318A71F37005206CB /* Main_iPad.storyboard in Resources */,
+				274366C818A71F37005206CB /* Images.xcassets in Resources */,
+				2724BB8A19B3F7A700961008 /* OptionsCell.xib in Resources */,
+				274366C018A71F37005206CB /* Main_iPhone.storyboard in Resources */,
+				27F6A5FD19C5234B00765947 /* logo_main.png in Resources */,
+				27D58F0A19B5951D00AEF881 /* PeerConnectionCell.xib in Resources */,
+				274366B718A71F37005206CB /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		274366CB18A71F37005206CB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				274366D918A71F37005206CB /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		274366A518A71F37005206CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27F6A5FA19C50AB400765947 /* WaitingViewController.m in Sources */,
+				27CCC4FC19B2AFB30037B923 /* PacketSignInResponse.m in Sources */,
+				27CCC4F719B2AFB30037B923 /* NSData+PacketAdditions.m in Sources */,
+				276939D019B3E470006FA667 /* MaroonTokenViewController.m in Sources */,
+				27CCC4F919B2AFB30037B923 /* PacketClientEndRound.m in Sources */,
+				2724BB8919B3F7A700961008 /* OptionsCell.m in Sources */,
+				276276C019B887570027C3AA /* Game.m in Sources */,
+				276276BD19B886C90027C3AA /* MainNavigationViewController.m in Sources */,
+				27FB4D421998FDE400961652 /* AddParticipantsViewController.m in Sources */,
+				27D58F0E19B5983000AEF881 /* ParticipantsConnectionViewController.m in Sources */,
+				276939CD19B2C935006FA667 /* Player.m in Sources */,
+				276276BA19B85C6B0027C3AA /* RoundViewController.m in Sources */,
+				274366BD18A71F37005206CB /* AppDelegate.m in Sources */,
+				276276AB19B5D24D0027C3AA /* MatchmakingServer.m in Sources */,
+				27CCC4FD19B2AFB30037B923 /* PacketStartResults.m in Sources */,
+				27D58F0919B5951D00AEF881 /* PeerConnectionCell.m in Sources */,
+				2724BB9419B57FDA00961008 /* ParticipantInfoViewController.m in Sources */,
+				27CCC4FE19B2AFB30037B923 /* PacketStartRound.m in Sources */,
+				27D58F1119B5998300AEF881 /* HostConnectionViewController.m in Sources */,
+				2724BB9019B4002500961008 /* Options.m in Sources */,
+				274366B918A71F37005206CB /* main.m in Sources */,
+				27CCC4FA19B2AFB30037B923 /* PacketOtherClientQuit.m in Sources */,
+				27C3F1E619BEE88E00368AE6 /* HostOverviewViewController.m in Sources */,
+				276276AE19B5D25D0027C3AA /* MatchmakingClient.m in Sources */,
+				27CCC4F819B2AFB30037B923 /* Packet.m in Sources */,
+				27CCC4FB19B2AFB30037B923 /* PacketServerReady.m in Sources */,
+				276939CA19B2C713006FA667 /* Round.m in Sources */,
+				27CCC50219B2B3BC0037B923 /* ParticipantCell.m in Sources */,
+				2724BB8D19B3FE0C00961008 /* OptionsViewController.m in Sources */,
+				2724BB9919B5807800961008 /* ParticipantInfoCell.m in Sources */,
+				276276B319B71B270027C3AA /* ResultViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		274366C918A71F37005206CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				274366DB18A71F37005206CB /* MaroonTokenTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		274366D318A71F37005206CB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 274366A818A71F37005206CB /* MaroonToken */;
+			targetProxy = 274366D218A71F37005206CB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		274366B518A71F37005206CB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				274366B618A71F37005206CB /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		274366BE18A71F37005206CB /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				274366BF18A71F37005206CB /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		274366C118A71F37005206CB /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				274366C218A71F37005206CB /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		274366D718A71F37005206CB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				274366D818A71F37005206CB /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		274366DC18A71F37005206CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		274366DD18A71F37005206CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		274366DF18A71F37005206CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MaroonToken/MaroonToken-Prefix.pch";
+				INFOPLIST_FILE = "MaroonToken/MaroonToken-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		274366E018A71F37005206CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MaroonToken/MaroonToken-Prefix.pch";
+				INFOPLIST_FILE = "MaroonToken/MaroonToken-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		274366E218A71F37005206CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MaroonToken.app/MaroonToken";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MaroonToken/MaroonToken-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "MaroonTokenTests/MaroonTokenTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		274366E318A71F37005206CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MaroonToken.app/MaroonToken";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MaroonToken/MaroonToken-Prefix.pch";
+				INFOPLIST_FILE = "MaroonTokenTests/MaroonTokenTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		274366A418A71F37005206CB /* Build configuration list for PBXProject "MaroonToken" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				274366DC18A71F37005206CB /* Debug */,
+				274366DD18A71F37005206CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		274366DE18A71F37005206CB /* Build configuration list for PBXNativeTarget "MaroonToken" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				274366DF18A71F37005206CB /* Debug */,
+				274366E018A71F37005206CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		274366E118A71F37005206CB /* Build configuration list for PBXNativeTarget "MaroonTokenTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				274366E218A71F37005206CB /* Debug */,
+				274366E318A71F37005206CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 274366A118A71F37005206CB /* Project object */;
+}

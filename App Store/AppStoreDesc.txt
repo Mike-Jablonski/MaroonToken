@@ -1,0 +1,9 @@
+MaroonToken is a social psychology experiment developed by the Department of Sociology at Texas A&M University.
+
+This public goods experiment is designed to allow groups of different sizes to interact in social dilemma environments. There are two types of funds involved: 1) A private or personal token fund which is only the individual's and not shared with others. 2) A group token fund that is shared among all group participants. The social dilemma faced is that it is always in an individual's personal self interest to not contribute to the group at any given point in time. However, if all participants only contribute to the individual private fund and never the group fund, all earn less in the long run and the public good is not provided. 
+
+The experiment game has different customizable options involving number of rounds, round time length, starting tokens, fund multipliers, hypothetical real-world worth of tokens, and visibility of these options to the participants.
+
+At the start of each round, each participant will begin with a set initial private token amount and the group begins with a set initial group token amount. (You may hide these amounts from the participants). During each round, a participant can give and/or take tokens to/from the group limited by set maximums. At the end of each round, the final group tokens and private tokens will be multiplied by set multipliers. (You may hide the multiplier values from the participants). The group fund is then divided equally and distributed to the participants' private funds. The experiment shows the results before beginning a new round.
+
+At the conclusion of the experiment, the decisions and results are saved and may be exported for further study.
